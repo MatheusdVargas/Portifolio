@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binários</title>
+    <link rel="stylesheet" href="binarios.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="pritrimestre.html">Voltar</a></li>
+            <li><a href="#">2º Trimestre</a></li>
+            <li><a href="#">3º Trimestre</a></li>
+        </ul>
+    </div>
+
+    <h1 align="right">Os Binários</h1> <hr> <br>
+    <h2 align="middle">O que é o sistema de numeração Binário?</h2> 
+    <p align="middle">O sistema de numeração binário é uma das muitas formas de escrever um número. Nosso sistema, o decimal, utliza 10 simbolos, sendo eles &#123;0, 1, 2, 3, 4, 5, 6, 7, 8 e 9&#125;; Já os binários utlizam apenas 2! Os famosos &#123;0 e 1&#125; que vemos em filmes ou series sobre tecnologia.</p> <br>
+
+    <h2 align="middle">Progressão de numeros binários</h2>
+    <p align="middle">Pesquisando e assistindo algumas video aulas eu percebi uma coisa que achei muito legal, veja a tabela a seguir:</p>
+    <img src="imagens/Tabela-binarios-full.png" alt="Tabela com os numeros decimais e suas representaçôes em binario">
+    <img src="imagens/Tabela-binarios.png" alt="Tabela dos binarios com destaque">
+    <p>Veja que existe um padrão a medida que vamos aumentando os numeros. A casa da unidade sempre termina em 0 ou 1, repetidamente, ou seja, caso tenhamos o numero 10100 e nao soubermos a sua sequencia, ao minimo sabermos que ele acaba em 1, já que 10100 acaba em 0. A mesma coisa acontece com a dezena, porém, 2 vezes seguidas, sempre tendo como dezena 0 e depois 0 ou 1 e depois 1. Isso pode, em algumas situações nos ajudar a saber qual vai ser o proximo numero da sequencia.</p>
+
+    <h2 align="middle">Conversão de Decimal para binário</h2>
+    <p>Assim como em todos os outros sistemas de numeração que veremos, a conversão será feita por meio de divisões consecutivas pelo numero base do sistema, no caso o 2. A divisão funciona da seguinte forma: </p>
+    <ol type="I">
+        <li>Pegamos o numero em decimal e o dividimos por 2</li>
+        <li>Caso o numero for par, seu resto é zero, entao guardamos o resto</li>
+        <li>Caso o numero for impar, o resto é 1 e, como antes, guardamos o 1</li>
+        <li>Pegamos o quociente e dividimos novamente por 2</li>
+        <li>Repetimos até que o quociente seja menor que 2</li>
+        <li>Pegamos o ultimo quociente e todos os restos, da diteita para a esquerda</li>
+        <img src="" alt="Conversão Decimal para binario">
+    </ol>
+    <h2 align="middle">Conversão binário para decimal</h2>
+    <p>Para a conversão de binário para decimal, fazemos a potenciação sempre com a base 2, comecando da direita para esquerda, e multiplicando pelo seu algarismo.
+    <ol type="I">
+        <li>Analizamos o número</li>
+        <li>Fazemos suas potências</li>
+        <li>Multiplicamos pelo seu algarismo</li>
+        <li>Somamos os resultados</li>
+    </ol>
+    <img align="middle" src="imagens/Captura de tela 2024-03-22 211741.png" alt="">
+
+    <h2 align="middle">Operações Basicas com os binários</h2>
+    <p>Por mais difícil que seja entender os binarios, eles não passam de uma versão simplificada do nosso sistema decimal, ou seja, eles também possuem operações que podem ser feitas (Adição, subtração, multiplicação e divisão). Podemos resolvelas de 2 jeitos: transformando-os em decimais ou entendendo algumas regras do sistema binário.</p>
+    <img src="somabin.jpg" alt="">
+    <p align="right">As somas são bem faceis, caso seja 1 + 0 ou 0 + 1, apenas descemos o 1. Já quando temos 1 + 1 devemos descer o 0 e colocar o 1 na próxima casa. Veja o exemplo:</p>
+    <script src="script.js"></script>
+</body>
+</html>

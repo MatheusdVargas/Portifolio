@@ -1,0 +1,54 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial;
+    background-color: #ebeaea;
+    color: #333;
+    margin: 2;
+    padding: 0;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo para o ícone hamburguer */
+.hamburger-menu {
+    cursor: pointer;
+}
+
+/* Estilo para as linhas do ícone hamburguer */
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+/* Estilo para os links */
+.nav-links {
+    list-style-type: none;
+    display: none; /* Inicialmente oculto */
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    text-align: center;
+}
