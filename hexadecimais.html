@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexadecimais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Criação de uma barra de navegação -->
+<div class="navbar">
+    <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- Links na barra de navegação -->
+    <ul class="nav-links">
+        <li><a href="index.html">Página Principal</a></li>
+        <li><a href="pritrimestre.html">Voltar</a></li>
+        <li><a href="#">2º Trimestre</a></li>
+        <li><a href="#">3º Trimestre</a></li>
+    </ul>
+</div>
+
+    <main>
+        <h1>Os Hexadecimais</h1>
+        <p>O sistema hexadecimal é o conjunto de 16 símbolos, da pra acreditar? 16 digitos! mas se acalme, ele também não é tão difícil assim. O conjunto hexadecimal é composto por &#123;0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F&#125;. Parece difícil, mas é só se lembrar de um baralho, não existe apenas 10 simbolos no baralho, são usados também as cartas J, Q e K, a mesma coisa acontece com os hexadecimais. Os números até o 9 nós já conhecemos muito bem e as letras apenas representam a continuação deles, ou seja, A equivale a 10, B equivale a 11 e assim por diante.</p>
+    </main>
+    <h2>Progressão dos hexadecimais</h2>
+        <p>Assim que acabam-se as as letras, juntamos o simbolo 1 mais todos ou simbolos novamente, igual fizemos em todos os outros sistemas. Veja a tabela:</p>
+        <img src="imagens/TABELAHEXA.png" alt="">
+        <img src="imagens/TABELAHEXA2.png" alt="">
+    <h2>Conversão Decimal para Hexadecimal</h2>
+        <p>Assim como os outros sistemas, a conversão se faz com divisões consecutivas, porém, nesse caso pelo número 16.</p>
+        <ol type="I">
+            <li>Dividir o número decimal por 16 e guardar o resto</li>
+            <li>Dividir o quociente por 16 e guardar o resto</li>
+            <li>Repetir as divisões até que o quociente seja menor que 16</li>
+            <li>Quando os restos forem de 10 até 15 devemos substituir pelo seu representante no hexadecimal (as letras)</li>
+            <li><font color="red">Lembre-se: sempre pegamos os restos da direita para esqueda</font></li>
+        </ol>
+        <img src="imagens/decparahex.png" alt="">
+    <h2>Conversão Hexadecimal para Decimal</h2>
+        <p>Assim como os outros sistemas, basta multiplicar o algarismo hexadecimal pela potência de base 16 elevado a sua posição.</p>
+        <ol type="I">
+            <li>Fazemos uma potencia de base 16 elevada a sua posição</li>
+            <li>multiplicamos o algarismo em hexadecima por essa potencia</li>
+            <li>Somamos</li>
+            <li><font color="red">Lembre-se: Os algarismos reprresentados por letras no hexadecimal tem uma representação em decimal cheque a tabela.</font></li>
+        </ol>
+        <img src="imagens/hexparadec.png" alt="">
+    <h2>Conversão Hexadecimal para Binário e Binário para Hexadecimal</h2>
+    <p>Novamente os binários nos ajudando com a conversão. Essa conversão é quase igual a  Octal para Binário, porém, usamos 4 dígitos, e claro, usamos outra tabela equivalência. Veja a tabela:</p>
+    <img src="imagens/tabequihex.png" alt="">
+    <p>Agora é simples, basta separar o numero binário de 4 em 4 ou escrever a equivalência de cada dígito hexadecimal para fazer a conversão, veja os exemplos:</p>
+    <img src="imagens/binparahex.png" alt="">
+    <img src="imagens/hexparabin.png" alt="">
+    <script src="script.js"></script>
+</body>
+</html>
