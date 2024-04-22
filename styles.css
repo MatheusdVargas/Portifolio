@@ -1,11 +1,23 @@
+/* Estilo para o conteúdo principal */
+main {
+    text-align: center;
+}
+
 /* Estilo para o corpo da página */
 body {
     font-family: Arial;
+    font-size: 14pt;
     background-color: #ebeaea;
     color: #333;
     margin: 2;
     padding: 0;
 }
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
+
 /* Estilo para a barra de navegação */
 .navbar {
     background-color: #333;
@@ -46,6 +58,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
 
 /* Estilo para o conteúdo principal */
 main {
