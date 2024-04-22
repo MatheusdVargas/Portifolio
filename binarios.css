@@ -1,6 +1,22 @@
+/* Comando para centralizar Imagens */
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem {
+    max-width: 100%; /* Evita que a imagem ultrapasse o tamanho do contêiner */
+}
+
+/* Parte principal do site */
+main{
+        text-align: center;
+}
+
 /* Estilo para o corpo da página */
 body {
     font-family: Arial;
+    font-size: 14pt;
     background-color: #ebeaea;
     color: #333;
     margin: 2;
@@ -47,3 +63,4 @@ body {
     color: #fff;
     text-decoration: none;
 }
+
