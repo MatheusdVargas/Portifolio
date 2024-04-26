@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binários</title>
+    <link rel="stylesheet" href="CSS/binarios.css">
+</head>
+<body>
+<!-- Criação de uma barra de navegação -->
+    <div class="navbar">
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="pritrimestre.html">Voltar</a></li>
+            <li><a href="#">2º Trimestre</a></li>
+            <li><a href="#">3º Trimestre</a></li>
+        </ul>
+    </div>
+<!-- Parte principal da pagina -->
+    <main>
+        <h1>Os Binários</h1> <hr> <br>
+        <h2>O que é o sistema de numeração Binário?</h2> 
+        <p>O sistema de numeração binário é uma das muitas formas de representar um número. Nosso sistema, o decimal, utliza 10 símbolos, sendo eles &#123;0, 1, 2, 3, 4, 5, 6, 7, 8 e 9&#125;; Já os binários utlizam apenas 2! Os famosos &#123;0 e 1&#125; que vemos em filmes ou séries sobre tecnologia. Por ele conter apenas 2 símbolos muitas vezes suas representações podem ficar enormes, mas não fique com medo! Os binários são bem mais fáceis do que parecem.</p> <br>
+    </main>
+<!-- Texto de grau 2 explicando sobre a progressão do sistema binário -->
+    <h2 align="middle">Progressão de números binários</h2>
+        <p id="progressão">Pesquisando e assistindo algumas video aulas eu percebi uma coisa que achei muito legal, veja a tabela a seguir:</p>
+        <img src="imagens/Tabela-binarios-full.png" alt="Tabela com os numeros decimais e suas representaçôes em binario">
+        <img src="imagens/Tabela-binarios.png" alt="Tabela dos binarios com destaque">
+        <p>Veja que existe um padrão a medida que vamos aumentando os números. <strong>A casa da unidade sempre termina em 0 ou 1</strong>, repetidamente, ou seja, caso alguém nos dê o número 10100 e não soubermos a sua sequência, ao mínimo saberíamos que ele acaba em 1, já que 10100 acaba em 0. A mesma coisa acontece com a dezena, porém, 2 vezes seguidas, sempre tendo como dezena 0 e depois 0 ou 1 e depois 1. Isso pode, em algumas situações nos ajudar a saber qual vai ser o próximo número da sequência.</p>
+<!-- Texto de grau 2 explicando sobre a conversão -->
+    <h2 align="middle">Conversão de Decimal para Binário</h2>
+        <p>Assim como em todos os outros sistemas de numeração que veremos, a <strong>conversão será feita por meio de divisões consecutivas</strong> pelo número base do sistema, no caso o 2. A divisão funciona da seguinte forma: </p>
+        <ol type="I">
+            <li>Pegamos o número em decimal e o dividimos por 2</li>
+            <li>Guardamos o seu resto</li>
+            <li>Pegamos o quociente e dividimos novamente por 2</li>
+            <li>Repetimos até que o quociente seja menor ou igual a 2</li>
+            <li>Pegamos o último quociente e todos os restos, <strong>da diteita para a esquerda</strong></li>
+        </ol>
+        <div class="centralizar">
+             <img src="imagens/deciparabin.png" alt="Conversão Decimal para binario">
+        </div>  
+<!-- Texto de grau 2 explicando sobre a conversão -->      
+    <h2 align="middle">Conversão Binário para Decimal</h2>
+        <p>Para a conversão de binário para decimal, fazemos a <strong>potenciação</strong> sempre com a base 2, comecando da direita para esquerda, e multiplicando pelo seu algarismo.
+        <ol type="I">
+            <li>Analizamos os números</li>
+            <li>Fazemos suas potências</li>
+            <li>Multiplicamos pelo seu algarismo</li>
+            <li>Somamos os resultados</li>
+        </ol>
+        <div class="centralizar">
+             <img src="imagens/binparadec.png" alt="">
+        </div>
+<!-- Texto de grau 2 introduzindo as operações dos binários -->
+    <h2 align="middle">Operações Básicas com os Binários</h2>
+<!-- Texto de grau 3 explicando a adição -->
+    <h3>Adição:</h3>
+        <p>Por mais difícil que seja entender os binarios, eles não passam de uma versão simplificada do nosso sistema decimal, ou seja, eles também possuem operações que podem ser feitas (Adição, subtração, multiplicação e divisão). Podemos resolvelas de 2 jeitos: <strong>transformando-os em decimais</strong> ou <strong>entendendo algumas regras do sistema binário.</strong>
+        As somas são bem faceis, caso seja 1 + 0 ou 0 + 1, apenas descemos o 1. Já quando temos 1 + 1 <strong>devemos descer o 0 e colocar o 1 na próxima casa</strong>, não se assuste, é a mesma coisa que somar os decimais. Veja a tabela:</p>
+        <div class="centralizar">
+            <img align="right" src="imagens/somabintabela.png" alt="Soma de binários">
+        </div>
+        <p>A cada +1 que o número tiver, basta olhar a sua sequencia na tabela da <a href="#progressão">progressão dos binários</a></p>
+        <p>Veja o exemplo:</p>
+        <div class="centralizar">
+             <img src="imagens/somabin.png" alt="Soma de binários exemplo"> <br>
+        </div>
+    <h3>Subtração:</h3>
+        <p></p>
+<!-- Script para barra de navegação -->
+    <script src="JScript/script.js"></script>
+</body>
+</html>

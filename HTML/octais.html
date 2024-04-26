@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octais</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+        <!-- Criação de uma barra de navegação -->
+<div class="navbar">
+    <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!-- Links na barra de navegação -->
+    <ul class="nav-links">
+        <li><a href="index.html">Página Principal</a></li>
+        <li><a href="pritrimestre.html">Voltar</a></li>
+        <li><a href="#">2º Trimestre</a></li>
+        <li><a href="#">3º Trimestre</a></li>
+    </ul>
+</div>
+<!-- Conteúdo principal da página -->
+    <main>
+        <h1 align="middle">Os octais</h1> <hr>
+        <p>O sistema de numeração octal é o mais simples comparado aos outros, principalmente por ser muito parecido com o decimal. O sistema octal contém 8 simbolos: &#123;0, 1, 2, 3, 4, 5, 6 e 7&#125;. Segundo a wikipedia: "<quote>O Octal foi muito utilizado em informática como uma alternativa mais compacta ao binário na programação em linguagem de máquina, porém hoje utiliza-se o hexadecimal como alternativa ao binário</quote>"</p>
+    </main>
+<!-- Texto de grau 2 introduzindo os assuntos -->
+    <h2>Progressão dos Octais</h2>
+     <p>Assim como os decimais, os octais começam pelo 0 e seguem normalmente até o 7, quando chega ao 7 não temos mais nenhum símbolo, então vamos para o 10, combinando até o 17, aí pulamos para o 20, sempre seguindo esse padrão de <strong>quando chegar ao 7 na unidade pular para próxima dezena</strong>. Veja a tabela a seguir:</p>
+     <div class="centralizar">
+        <img src="imagens/tabelaoct.png" alt="Tabela dos octais">
+     </div>
+
+    <h2>Conversão Decimal para Octal</h2>
+        <p>Assim como os binários, <strong>fazemos divisões consecutivas pela sua base</strong>, no caso o 8. até que o quociente seja menor que 8.</p>
+        <ol type="I">
+            <li>Pegamos o número em base decimal e o dividimos por 8</li>
+            <li>Guardamos o resto e repetimos a divisão pelo quociente</li>
+            <li>Repetimos o processo até que o quociente seja menor ou igual a 8</li>
+            <li>Pegamos os restos da divisão da <strong>direita para esquerda</strong></li>
+        </ol>
+        <div class="centralizar">
+            <img src="imagens/convdecoct.png" alt="">
+        </div>
+
+    <h2>Conversão Octal para Decimal</h2>
+        <p>Aqui as coisas começam a ficar difíceis, mas não se preocupe, apenas com algumas noções básicas de potenciação e multiplicação já somos capazes de resolver. Assim somo nos binários, <strong>vamos pegar o número e multiplica-lo pela potencia elevada a sua posição</strong> (potencia de base 8 sempre).</p>
+        <ol type="I">
+            <li>Faça a potência com a base oito e eleve-a a sua posição</li>
+            <li>Resolva essa potência e multiplique pelo algarísmo que estava no decimal</li>
+            <li>Guarde o resultado e depois some com os outros</li>
+        </ol>
+        <div class="centralizar">
+            <img src="imagens/convoctdec.png" alt="">
+        </div>
+
+    <h2>Conversão Octal para Binário e Binário para Octal</h2>
+    <p>Quem diria que o sistema binário, que antes parecia um bicho de sete cabeças, mas que ja foi dominado por nós nos ajudaria com a conversão dos números. Essa é uma das conversões mais fáceis de serem feitas, <strong>basta uma tabela de equivalência</strong>.</p>
+    <ol type="I">
+        <li>Dividimos o número binário <strong>de 3 em 3 casas</strong></li>
+        <li>olhamos o valor na tabela de equivalência e convertemos</li>
+    </ol>
+    <p>Ou pegamos cada dígito do número em octal e escrevemos sua equivalência em binário de acordo com a tabela</p>
+    <div class="centralizar">
+         <img src="imagens/tabelaequivalenciaoct.png" alt="Tabela ded equivalência dos Octais">
+    </div>
+<!-- Script para barra de navegação -->
+        <script src="JScript/script.js"></script>
+</body>
+</html>
